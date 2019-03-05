@@ -1,7 +1,11 @@
 #猜數字比大小，會告訴你比答案大或小，即猜中的次數
 import random
+end = input('請決定隨機數字範圍最大值:')
+start = input('請決定隨機數字範圍最小值：')
+end = int(end)
+start = int(start)
 
-r = random.randint(1, 100)
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1 #count = count + 1
